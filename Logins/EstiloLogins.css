@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+}
+
+.titulo img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.logoPerfil img {
+    max-width: 100px;
+}
+
+.MenuCabecalho {
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.menu {
+    position: fixed;
+    right: calc(120px + 20px);
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li.professor,
+.menu ul li.aluno,
+.menu ul li.administrador {
+    margin-right: auto;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.quadrado {
+    width: 350px;
+    height: 350px;
+    background-color: #000000;
+    border: 2px solid rgb(255, 0, 0);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.quadrado p {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.quadrado input {
+    width: 100%;
+}
+
+.esquerda,
+.meio,
+.direita {
+    margin: 0 10px;
+}
+
+.container a {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: rgb(255, 34, 34);
+}
+
+.container img {
+    width: 100px;
+    border-radius: 100px;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+button {
+    max-width: 100px;
+    background-color: #000000;
+    border: 1px solid red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+.menu ul li + li {
+    margin-left: 20px;
+}
+
+.menu ul li + li::before {
+    content: "|";
+    margin-right: 10px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+}

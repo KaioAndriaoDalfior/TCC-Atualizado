@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333843;
+    color: white;
+    font-family: Arial, sans-serif; /* Adicionando uma fonte de fallback */
+}
+
+header {
+    background: black;
+    display: flex;
+    justify-content: space-between; /* Para alinhar os elementos no cabeçalho */
+    align-items: center; /* Para centralizar verticalmente os elementos no cabeçalho */
+    padding: 10px 20px; /* Espaçamento interno do cabeçalho */
+}
+
+.titulo img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+.logoPerfil img{
+    max-width: 100px;
+    margin-right: 900px;
+}
+
+.MenuCabecalho {
+    display: flex;
+    align-items: center; /* Para centralizar verticalmente os itens do menu */
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0; /* Removendo margem padrão */
+    padding: 0; /* Removendo preenchimento padrão */
+    display: flex; /* Para alinhar os itens horizontalmente */
+}
+
+.menu ul li {
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
+}
+
+.menu ul li.professor,
+.menu ul li.aluno,
+.menu ul li.administrador {
+    margin-right: auto; /* Para alinhar à esquerda */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline; /* Adicionando sublinhado ao passar o mouse */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Alterado para 'min-height' para garantir que o contêiner tenha altura mínima */
+    text-align: center;
+}
+
+.quadrado {
+    max-width: 350px;
+    background-color: #000000;
+    border: 2px solid rgb(255, 0, 0);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px; /* Adicionado espaçamento superior */
+}
+
+.quadrado p {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.quadrado input {
+    width: 100%;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
